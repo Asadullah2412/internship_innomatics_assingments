@@ -2,10 +2,13 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 from config import DEBUG
 from database import init_db
+from routes import routes
 
 def create_app():
     app = Flask(__name__)
     CORS(app)
+
+    app.register_blueprint(routes)
 
     @app.route("/")
     def health_check():
