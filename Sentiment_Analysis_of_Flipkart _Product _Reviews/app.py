@@ -11,8 +11,11 @@ st.title("Sentiment Analysis App")
 st.write("Enter a review and the model will predict its sentiment.")
 
 
-# nltk.download('stopwords')
-stop_words = set(stopwords.words('english'))
+try:
+    stop_words = set(stopwords.words('english'))
+except LookupError:
+    nltk.download('stopwords')
+    stop_words = set(stopwords.words('english'))
 
 def clean_text(text):
     text = str(text).lower()
