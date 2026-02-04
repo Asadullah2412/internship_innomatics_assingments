@@ -23,14 +23,16 @@ def clean_text(text):
     text = re.sub(r'\s+', ' ', text).strip()
     text = ' '.join(word for word in text.split() if word not in stop_words)
     return text
-
-
+from pathlib import Path
+BASE_DIR = Path(__file__).parent
 
 @st.cache_resource
 def load_model():
-    model = joblib.load("sentiment_model.pkl")
-    vectorizer = joblib.load("tfidf_vectorizer.pkl")
-    return model, vectorizer
+   model = joblib.load(BASE_DIR / "sentiment_model.pkl")
+   vectorizer = joblib.load(BASE_DIR / "tfidf_vectorizer.pkl")
+   return model, vectorizer
+   
+        
 
 
 model, tfidf = load_model()
