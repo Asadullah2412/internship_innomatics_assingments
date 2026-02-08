@@ -98,7 +98,14 @@ The best-performing model (based on **F1-score**) is:
   * `Production`
 
 This enables controlled model lifecycle management.
-
+![Alt text](screenshots/accuracy.png)
+![Alt text](screenshots/C.png)
+![Alt text](screenshots/f1_score.png)
+![Alt text](screenshots/lemmitzation.png)
+![Alt text](screenshots/precision.png)
+![Alt text](screenshots/preprocessing.png)
+![Alt text](screenshots/recall.png)
+![Alt text](screenshots/stemming.png)
 ---
 
 ## 🔄 Workflow Orchestration (Prefect)
