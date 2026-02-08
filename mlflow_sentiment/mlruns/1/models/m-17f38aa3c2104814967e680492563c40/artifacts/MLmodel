@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/admin/Desktop/programming/Data Science_internship/mlflow_sentiment/mlruns/1/models/m-17f38aa3c2104814967e680492563c40/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+    skops_trusted_types: null
+mlflow_version: 3.9.0
+model_id: m-17f38aa3c2104814967e680492563c40
+model_size_bytes: 240707
+model_uuid: m-17f38aa3c2104814967e680492563c40
+prompts: null
+run_id: 839b619de6c24131a27491a6aab6cd01
+utc_time_created: '2026-02-08 14:46:18.255492'
