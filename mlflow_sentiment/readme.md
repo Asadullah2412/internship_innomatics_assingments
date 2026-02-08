@@ -78,11 +78,28 @@ MLflow is used to track:
 ### Logged Metrics
 
 * Accuracy
+
+![Alt text](screenshots/accuracy.png)
+
 * Precision (weighted)
+![Alt text](screenshots/precision.png)
 * Recall (weighted)
+![Alt text](screenshots/recall.png)
 * F1-score (weighted)
+![Alt text](screenshots/f1_score.png)
 
 Metric plots are visualized directly in the **MLflow UI**.
+
+### Hyperparameters
+
+* Lemmatization
+![Alt text](screenshots/lemmitzation.png)
+* C (hyperparameter that controls the inverse of the regularization strength)
+![Alt text](screenshots/C.png)
+* Preprocessing
+![Alt text](screenshots/preprocessing.png)
+* Stemming
+![Alt text](screenshots/stemming.png)
 
 ---
 
@@ -98,14 +115,8 @@ The best-performing model (based on **F1-score**) is:
   * `Production`
 
 This enables controlled model lifecycle management.
-![Alt text](screenshots/accuracy.png)
-![Alt text](screenshots/C.png)
-![Alt text](screenshots/f1_score.png)
-![Alt text](screenshots/lemmitzation.png)
-![Alt text](screenshots/precision.png)
-![Alt text](screenshots/preprocessing.png)
-![Alt text](screenshots/recall.png)
-![Alt text](screenshots/stemming.png)
+![Alt text](screenshots/p3.png)
+
 ---
 
 ## 🔄 Workflow Orchestration (Prefect)
@@ -128,7 +139,9 @@ A Prefect flow is used to orchestrate the training pipeline:
 * Visual DAG
 * Easy scheduling
 * Production-grade orchestration
+![Alt text](screenshots/p4.png)
 
+![Alt text](screenshots/p2.png)
 ---
 
 ## ⏰ Scheduling
@@ -145,7 +158,9 @@ The flow execution and task states can be monitored via the **Prefect Dashboard*
 ## 📊 Dashboards
 
 * **MLflow UI**: Experiment comparison, metrics, artifacts, model registry
+![Alt text](screenshots/mf.png)
 * **Prefect UI**: Flow runs, retries, logs, and task-level status
+![Alt text](screenshots/p1.png)
 
 Screenshots of both dashboards are included in the project documentation.
 
